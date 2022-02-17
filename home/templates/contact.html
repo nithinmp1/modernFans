@@ -1,0 +1,149 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Slider::Section Start-->
+<section class="main-slider inner-header">
+  <div class="tp-banner-container">
+    <div class="tp-banner">
+      <ul>
+        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="{% static 'home/images/bg/bg3.jpg ' %}"  data-saveperformance="off"  data-title="Business Coaching"> <img src="{% static 'home/images/bg/bg3.jpg ' %}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+          <div class="tp-caption lfb tp-resizeme"
+                      data-x="center" 
+                      data-hoffset="15"
+                      data-y="center" 
+                      data-voffset="0"
+                      data-speed="1500"
+                      data-start="750"
+                      data-easing="easeOutExpo"
+                      data-splitin="none"
+                      data-splitout="none"
+                      data-elementdelay="0.01"
+                      data-endelementdelay="0.3"
+                      data-endspeed="1200"
+                      data-endeasing="Power4.easeIn"
+                      >
+            <h1>Contact</h1>
+          </div>
+          <div class="tp-caption lfb tp-resizeme"
+                      data-x="center" 
+                      data-hoffset="15"
+                      data-y="center" 
+                      data-voffset="80"
+                      data-speed="1500"
+                      data-start="1000"
+                      data-easing="easeOutExpo"
+                      data-splitin="none"
+                      data-splitout="none"
+                      data-elementdelay="0.01"
+                      data-endelementdelay="0.3"
+                      data-endspeed="1200"
+                      data-endeasing="Power4.easeIn"
+                      style="z-index: 4; white-space: nowrap;">
+            <div class="text-center">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem natus sint quasi voluptatibus <br>
+                velit delectus possimus? Eaque sequi</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="tp-bannertimer"></div>
+    </div>
+  </div>
+</section>
+<!-- Slider::Section End--> 
+
+
+<!-- Map:: section -->
+<section class="map-section">
+  <div class="home-google-map">
+      <div 
+          class="google-map" 
+          id="contact-google-map" 
+          data-map-lat="40.700843" 
+          data-map-lng="-74.004012" 
+          data-icon-path="{% static 'home/images/icons/map-marker.png' %}"
+          data-map-title="Chester"
+          data-map-zoom="11" >
+      </div>
+  </div>
+</section>
+<!-- Map:: Section End -->
+
+<!-- Section:: Contact --> 
+<section class="contact-1">
+  <div class="container">
+      <div class="section-content">
+          <div class="row">
+              <div class="col-md-4 pt90">
+                  <div class="contact-item">
+                      <div class="content">
+                          <h5>contact us : </h5>
+                          <p>17 Downtown St, Victoria,<br>Australia</p>
+                      </div>
+                      <span class="icon icon-Starship"></span>
+                  </div>
+                  <div class="contact-item">
+                      <div class="content">
+                          <h5>call us : </h5>
+                          <p>+(01) 123 456 7896<br>+(01) 123 456 7899</p>
+                      </div>
+                      <span class="icon icon-Phone2"></span>
+                  </div>
+                </div>
+              <div class="col-md-8">
+                  <!-- Contact Form -->
+                      <h2>send us <span>message</span> </h2>
+                  <form class="contact-form" method="post" action="http://demo.iamhafiz.me/industrious/contact-form/contact.php" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Name *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Name is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Phone *</label>
+                                    <input id="form_phone" type="text" name="phone" class="form-control" placeholder="Please enter your phone *" required="required" data-error="Phone number is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="9" required data-error="Please,leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn theme-btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                    </div>
+                  </form> 
+              </div>
+          </div>
+      </div>
+  </div>
+</section>  
+<!-- Section:: Contact End --> 
+
+
+
+{% endblock %}

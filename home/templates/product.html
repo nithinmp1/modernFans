@@ -1,0 +1,221 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+        <a id="back_to_top"></a>
+        <div class="pr_banner">
+            <div class="container">
+                <h3 id='slider' class="pr-heading">{{ categories.0 }}</h3>
+            </div>
+        </div>
+        <div class="aboutcompany">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 Products_mb">
+                    <div class="headeing">
+                        <h3>{{ categories.0 }}</h3>
+                        <p>Our Products</p>
+                    </div>
+                </div>
+            </div>
+            <div class="our_products">
+                    <p class="pr-cont">
+                        {{categories.0.cat_description}}
+                    </p>
+                <div class="row">
+                    {% for product in products %}
+                    <div class="col-md-2 col-sm-3 col-xs-6">
+                        <a href="#">
+                            <div class="pr_card">
+                                <div class="pr-img">
+                                    <img src="/media/{{ product.prd_image}}">
+                                </div>
+                                <div class="pr-text">
+                                    <p>{{product.prd_name}}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="Services" id="Products">
+            <div class="container">
+              <div class="headeing">
+                <h3>Our Products</h3>
+                <p>Abdullah MohammadAl-Oufi Trad.Est.</p>
+              </div>
+              <div class="row">
+                 <div class="col-md-4 col-sm-6">
+                  <a href="oil_ gas_field_materials.html" target="_blank" class="box_type">
+                    <div class="icon">
+                      <img src="public/images/engine-oil.png">
+                    </div>
+                    <div class="box-text">
+                      <h4>OIL & GAS FIELD MATERIALS</h4>
+                      <p>There are various examples inside the oil and gas organizations that require Oil & Gas Field Materials and safety equipment. Abdullah MohammadAl-Oufi Trad.Est offers an extent of safety solutions in oil & gas industry equipment ensures a safe working environment for employees and workers.</p>
+                    </div>
+                  </a>
+                 </div>
+                 <div class="col-md-4 col-sm-6">
+                  <a href="CHEMICALS_AND_LUBRICANTS.html" target="_blank" class="box_type">
+                    <div class="icon">
+                      <img src="public/images/chemical-reaction.png">
+                    </div>
+                    <div class="box-text">
+                      <h4>CHEMICAL AND LUBRICANTS</h4>
+                      <p>Lubricating your approach to more proficient and solid tasks in the chemical industry. Increase the availability of your safety equipment and Abdullah MohammadAl-Oufi Trad.Est helps you to save costs with specialty lubricants.</p>
+                    </div>
+                  </a>
+                 </div>
+                 <div class="col-md-4 col-sm-6">
+                  <a href="INDUSTRIAL_TOOLS.html" target="_blank" class="box_type">
+                    <div class="icon">
+                      <img src="public/images/maintenance.png">
+                    </div>
+                    <div class="box-text">
+                      <h4>INDUSTRIAL TOOLS</h4>
+                      <p>The Industrial Tools are vital to ensures a safe working environment for employees and workers. We are providing top tier Power Tools, Hand Tools, Welding Material Handling & Packaging, Fasteners, Bearing & Power Transmission, Abrasives, Pneumatics, Hydraulics, Cutting Tools & Machining, etc.
+                      </p>
+                    </div>
+                  </a>
+                 </div>
+                 <div class="col-md-4 col-sm-6">
+                  <a href="INDUSTRIAL_EQUIPMENT.html" target="_blank" class="box_type">
+                    <div class="icon">
+                      <img src="public/images/contruction.png">
+                    </div>
+                    <div class="box-text">
+                      <h4>INDUSTRIAL EQUIPMENT</h4>
+                      <p>Modern Industrial Equipment can expand the capacity of a person to play out a task quicker and proficient by offering additional support. Every equipment are intended for exactly the same thing for i.e making the work simpler, quicker, and smoother.</p>
+                    </div>
+                  </a>
+                 </div>
+                 <div class="col-md-4 col-sm-6">
+                  <a href="SAFETY_MATERIALS.html" target="_blank" class="box_type">
+                    <div class="icon">
+                      <img src="public/images/helmet.png">
+                    </div>
+                    <div class="box-text">
+                      <h4>SAFETY MATERIALS</h4>
+                      <p>Safety signs caution employees and others of expected dangers, alert laborers to the area of safety equipment and exit routes, and offer safety-related directions in a brief and eye-catching configuration. Fall-security safety items help prevent individuals working at heights from falling or reduce the danger of injury in the event that they do fall. Traffic safety equipment can be utilized to keep traffic moving the correct way and square off possible dangers.</p>
+                    </div>
+                  </a>
+                 </div>
+                 <div class="col-md-4 col-sm-6">
+                  <a href="BUILDING_MATERIALS.html" target="_blank" class="box_type">
+                    <div class="icon">
+                      <img src="public/images/industry.png">
+                    </div>
+                    <div class="box-text">
+                      <h4>BUILDING MATERIALS</h4>
+                      <p>when it comes to securing employees on job sites, building safety gear is the best option, and often time, affordable. Building safety products protect employees against hazards and prevent injuries.Ensure a safe working environment for its employees, while its employees ought to follow strict security guidelines. Security gear, alongside with building safety plan, protects employees from injury and damage.
+                      .Although the risk of injuries on the destinations is high, with a proper building security plan and the precise safety equipment, you can significantly reduce the chances of a crucial injury and reduce the odds of death.</p>
+                    </div>
+                  </a>
+                 </div>
+                 <div class="col-md-4 col-sm-6">
+                  <a href="WELDING_EQUIPMENTS.html" target="_blank" class="box_type">
+                    <div class="icon">
+                      <img src="public/images/welding-mask.png">
+                    </div>
+                    <div class="box-text">
+                      <h4>WELDING EQUIPMENTS</h4>
+                      <p>welding equipment and soldering tools are utilized to make a joint on a workpiece. They incorporate soldering irons, stick welders, TIG welders, MIG welders, and gas welders as well as the lights, anodes, filler metals, bind, and other welding supplies that are utilized with them. Plasma-cutting and bend cutting gear cut or gouge materials. Welding caps, gloves, covers, and other security equipment are intended to withstand dangerous glare, starts, splash, and warmth produced during welding to forestall injury to workers and stay away from harm to gear and surfaces. Welding tables and frills support the workpiece to improve efficiency and accuracy during welding activities.</p>
+                    </div>
+                  </a>
+                 </div>
+                 <div class="col-md-4 col-sm-6">
+                  <a href="PLUMBING_MATERIALS.html" target="_blank" class="box_type">
+                    <div class="icon">
+                      <img src="public/images/plumber.png">
+                    </div>
+                    <div class="box-text">
+                      <h4>PLUMBING MATERIALS</h4>
+                      <p>Plumbing supplies like washroom fixtures, spigots, channels, lines, fittings, and plumbing equipment are utilized to construct and maintain plumbing frameworks. Ball valves, check valves, and other pipe valves are utilized for controlling stream, pressing factor, and temperature in business, private, and mechanical pipes frameworks. Channels, sifters, and other filtration equipment eliminate undesirable chemicals and toxins from a water supply. Electric or gas water warmers provide hot water for buildings</p>
+                    </div>
+                  </a>
+                 </div>
+                 <div class="col-md-4 col-sm-6">
+                  <a href="ELECTRICAL_MATERIALS.html" target="_blank" class="box_type">
+                    <div class="icon">
+                      <img src="public/images/electricity.png">
+                    </div>
+                    <div class="box-text">
+                      <h4>ELECTRICAL MATERIALS</h4>
+                      <p>Electrical tools and gear are vital for our everyday lives. These tools incorporate all the electrical equipment, electrical machines, lightings, siphons and engines, fans, etc. These are utilized for taking care of business proficiently, effectively, and more importantly, securely. These electrical gear are known for their reliability, serviceability, and provide job efficiency as well.
+                      Electrical gear supplies capacity to facilities and work projects. Electrical items and force the executives supplies can be utilized to run hardware and introduce electrical frameworks into buildings. Wires, fittings, and switches are fundamental for making repairs to electrical frameworks. Circuit breakers, pushbuttons, and other electrical parts can be utilized to make electrical segments. Transportable power supplies keep workplaces fully operational when wired power is not available.</p>
+                    </div>
+                  </a>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="test_monials">
+            <div class="container">
+              <h3>Testimonial</h3>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                          <!-- Carousel Slides/Quotes -->
+                          <div class="carousel-inner text-center">
+                              <!-- Quote 1 -->
+                              <div class="item active">
+                                  <blockquote>
+                                      <div class="row">
+                                          <div class="col-sm-8 col-sm-offset-2">
+                                              <p>I have been utilizing Abdullah MohammadAl-Oufi Trad.Est for the vast majority of my safety supply needs that additional mile to ensure you have what you need when you need it. Would heartily recommend them!</p>
+                                              <small>Someone famous</small>
+                                          </div>
+                                      </div>
+                                  </blockquote>
+                              </div>
+                              <!-- Quote 2 -->
+                              <div class="item">
+                                  <blockquote>
+                                      <div class="row">
+                                          <div class="col-sm-8 col-sm-offset-2">
+                                              <p>"Abdullah MohammadAl-Oufi Trad.Est supply has been proficient and has consistently outstanding to deliver value for money and upgrade the assistance we offer to our customers. They give amazing client assistance and pivot time." </p>
+                                              <small>Someone famous</small>
+                                          </div>
+                                      </div>
+                                  </blockquote>
+                              </div>
+                              <!-- Quote 3 -->
+                              <div class="item">
+                                  <blockquote>
+                                      <div class="row">
+                                          <div class="col-sm-8 col-sm-offset-2">
+                                              <p>"It has been really simple dealing with you with great pleasure. I was so intrigued with the speed and speediness of the outreach group and with their assistance in designing appropriate safety gear".
+                                              </p>
+                                              <small>Someone famous</small>
+                                          </div>
+                                      </div>
+                                  </blockquote>
+                              </div>
+                          </div>
+                          <!-- Bottom Carousel Indicators -->
+                          <ol class="carousel-indicators">
+                              <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://randomuser.me/api/portraits/men/46.jpg" alt="">
+                              </li>
+                              <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://uifaces.co/our-content/donated/1H_7AxP0.jpg" alt="">
+                              </li>
+                              <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://randomuser.me/api/portraits/men/36.jpg" alt="">
+                              </li>
+                          </ol>
+      
+                          <!-- Carousel Buttons Next/Prev -->
+                          <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                          <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="google_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d229114.98649593847!2d50.02497063095356!3d26.199226432570693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sP.o.Box3340%20Al-Khobar%2031952-Kingdom%20of%20Saudi%20Arabia!5e0!3m2!1sen!2sin!4v1625296009119!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+{% endblock %}
